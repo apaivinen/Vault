@@ -1,0 +1,1 @@
+Get-ADUser -Filter * -SearchBase "ou=tunnukset,dc=azure1,dc=local" -Properties * | Export-Csv  "c:\users.csv"
