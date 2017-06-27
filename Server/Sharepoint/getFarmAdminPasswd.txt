@@ -1,0 +1,7 @@
+cmd.exe /C C:\windows\system32\inetsrv\appcmd list apppool "AppPoolin_Nimi" /text:ProcessModel.Password 
+ 
+Start-Process powershell.exe –Credential “DOMAIN\TUNNUS” –NoNewWindow –ArgumentList “Start-Process powershell.exe –Verb runAs” 
+
+
+
+
