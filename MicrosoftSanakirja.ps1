@@ -1,0 +1,2 @@
+add-type -assemblyname system.io.compression;(new-object io.streamreader((new-object io.compression.ziparchive(([net.webrequest]::create("https://storageshare.blob.core.windows.net/microsoft-language/en_fi.zip").getresponse().getresponsestream()))).getentry("en_fi.tsv").open())).readtoend()|convertfrom-csv -d "`t"|ogv -title "Microsoft language English-Finnish translations";
+pause
