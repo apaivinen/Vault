@@ -1,2 +1,2 @@
 # The Vault
-Powershell scriptit server 2016 ja Azurea varten
+Powershell scriptit server 2016, Sharepoint ja Azurea varten
