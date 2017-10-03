@@ -1,3 +1,9 @@
+
+##############################################################
+########## Toimii ainakin SP 2013 ############################
+##############################################################
+#EI ota huomioon alikansioita @ $localFolderPath
+
 $webUrl = "http://www.sivusto.epic/test/"
 
 $docLibraryName = "Kuvapankki"
@@ -12,7 +18,7 @@ ForEach($file in $files)
 {
 	#Open file
 	$fileStream = ([System.IO.FileInfo] (Get-Item $file.FullName)).OpenRead()
-
+	write-host $file
 	#Add file
 	$folder =  $web.getfolder($docLibraryUrlName)
 
