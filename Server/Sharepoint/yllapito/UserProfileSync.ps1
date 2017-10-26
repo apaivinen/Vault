@@ -1,6 +1,11 @@
 #
 #Raakaversio user profile syncistä profiilien lukumäärän hakuun sekä mahdolliseen syncissä ilmenneiden rikkinäisten profiilien määrän hakemiseen.
 #
+
+if ((Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue) -eq $null){
+    Add-PSSnapin "Microsoft.SharePoint.PowerShell"
+}
+
 Write-host "******USER PROFILE SYNC******" -BackgroundColor Green -ForegroundColor black
 
 	$site = new-object Microsoft.SharePoint.SPSite("http://wwwcm.keravanopisto.dev"); #Muuta ympäristön mukaan
